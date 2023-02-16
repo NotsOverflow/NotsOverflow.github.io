@@ -1,1 +1,83 @@
-[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"packages/cupertino_icons/CupertinoIcons","fonts":[{"asset":"packages/cupertino_icons/assets/CupertinoIcons.ttf"}]}]
+[
+    {
+      "family": "LobsterTwo",
+      "fonts": [
+        {
+          "asset": "fonts/LobsterTwo/LobsterTwo-Regular.ttf"},{
+          
+          "asset": "fonts/LobsterTwo/LobsterTwo-Italic.ttf"},{
+          
+          "asset": "fonts/LobsterTwo/LobsterTwo-BoldItalic.ttf"},{
+          
+          "asset": "fonts/LobsterTwo/LobsterTwo-Bold.ttf"
+        }
+      ]
+    },
+    {
+        "family": "PlayfairDisplay",
+        "fonts": [
+          {
+            "asset": "fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf"},{
+            "asset": "fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf"},{
+            "asset": "fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf"},{
+            "asset": "fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf"
+          }
+        ]
+      },
+      {
+        "family": "Poppins",
+        "fonts": [
+          {
+            "asset": "fonts/Poppins/Poppins-Regular.ttf"},{
+            "asset": "fonts/Poppins/Poppins-Italic.ttf"},{
+            "asset": "fonts/Poppins/Poppins-BoldItalic.ttf"},{
+            "asset": "fonts/Poppins/Poppins-Bold.ttf"
+          }
+        ]
+      },
+      {
+        "family": "Ubuntu",
+        "fonts": [
+          {
+            "asset": "fonts/Ubuntu/Ubuntu-Regular.ttf"},{
+            "asset": "fonts/Ubuntu/Ubuntu-Italic.ttf"},{
+            "asset": "fonts/Ubuntu/Ubuntu-BoldItalic.ttf"},{
+            "asset": "fonts/Ubuntu/Ubuntu-Bold.ttf"
+          }
+        ]
+      },
+      {
+        "family": "Code",
+        "fonts": [
+          {
+            "asset": "fonts/codePro/SourceCodePro-Regular.ttf"},{
+            "asset": "fonts/codePro/SourceCodePro-Italic.ttf"},{
+            "asset": "fonts/codePro/SourceCodePro-BoldItalic.ttf"},{
+            "asset": "fonts/codePro/SourceCodePro-Bold.ttf"
+          }
+        ]
+      },
+      {
+        "family": "Roboto",
+        "fonts": [
+          {
+            "asset": "fonts/Roboto/Roboto-Regular.ttf"},{
+            "asset": "fonts/Roboto/Roboto-Italic.ttf"},{
+            "asset": "fonts/Roboto/Roboto-BoldItalic.ttf"},{
+            "asset": "fonts/Roboto/Roboto-Bold.ttf"
+          }
+        ]
+      },
+      {
+        "family": "Montserrat",
+        "fonts": [
+          {
+            "asset": "fonts/Montserrat/Montserrat-Regular.ttf"},{
+            "asset": "fonts/Montserrat/Montserrat-Italic.ttf"},{
+            "asset": "fonts/Montserrat/Montserrat-BoldItalic.ttf"},{
+            "asset": "fonts/Montserrat/Montserrat-Bold.ttf"
+          }
+        ]
+      },
+      {"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"packages/cupertino_icons/CupertinoIcons","fonts":[{"asset":"packages/cupertino_icons/assets/CupertinoIcons.ttf"}]}
+  ]
