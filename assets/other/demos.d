@@ -1,7 +1,8 @@
 # Cat Game
 + cat game
 https://richardjuan-business.com/cat/
-> My first godot game  
+> My first godot game 
+> (not for mobile)
 ! img/cccp.png
 # DeepQLearning_logistic_solving
 + github
