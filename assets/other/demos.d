@@ -1,6 +1,6 @@
 # Cat Game
 + cat game
-https://richardjuan-buisiness.com/cat/
+https://richardjuan-business.com/cat/
 > My first godot game  
 ! img/cccp.png
 # DeepQLearning_logistic_solving
