@@ -28,4 +28,4 @@ spetially after after big donations from facebook and epic.
 
 ### My experience ?
 it's now my game engine of choice, it tick all the boxes for me.
-[Here a demo](https://richardjuan-business.com/cat/) (don't juge, it's hard in purpose and it's for learning)
+[Here a demo](https://richard-juan.com/cat/) (don't juge, it's hard in purpose and it's for learning)
