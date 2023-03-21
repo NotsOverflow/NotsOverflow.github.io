@@ -1,6 +1,6 @@
 # Cat Game
 + cat game
-https://richardjuan-business.com/cat/
+https://richard-juan.com/cat/
 > My first godot game 
 > (not for mobile)
 ! img/cccp.png
