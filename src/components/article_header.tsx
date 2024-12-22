@@ -24,7 +24,7 @@ export const ArticleHeader: React.FC<Param> = ({article, right = false}) =>{
     if(article.malformed) return (
         <a className={styles.article} href="#">
             <div className={right ? styles.article_image_right : styles.article_image_left }>
-                <img className={styles.article_image} src="/src/assets/error.svg"/>
+                <img className={styles.article_image} src="/assets/error.svg"/>
             </div>
             <div className={styles.article_text }>
                 <p className={right ? styles.article_title_right : styles.article_title_left}>Error!</p>
