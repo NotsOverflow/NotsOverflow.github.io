@@ -15,6 +15,7 @@
 import styles from "../styles/header.module.sass"
 import { EMAIL, getHash, WEB_NAME } from "../libs/globals";
 import { useEffect, useRef } from "react";
+import avatar from "./src/assets/avatar.svg";
 
 interface Param{
     email: string;
@@ -95,7 +96,7 @@ export const Header: React.FC = () =>{
                 <ArrowBack />
             </div>
             <div className={styles.midle_header}>
-                <img className={styles.avatar} src="/src/assets/avatar.svg"/>
+                <img className={styles.avatar} src={avatar}/>
                 <div className={styles.title}>{WEB_NAME.toUpperCase()}</div>
             </div>
             <div className={styles.right_container}>
