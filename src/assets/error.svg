@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ 
+                  ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬
+                  ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││
+                  ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘
+ 
+                   email_icon.svg created 2024/12/07
+                   by Richard JUAN (contact@richard-juan.com)
+ 
+                   All rights reserved to Richard JUAN
+ 
+-->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="error.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter9"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix8" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         id="feColorMatrix9" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.00875"
+     inkscape:cx="400"
+     inkscape:cy="326.64188"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     sodipodi:type="star"
+     style="fill:none;stroke:#d0d0d0;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round"
+     id="path1"
+     inkscape:flatsided="true"
+     sodipodi:sides="3"
+     sodipodi:cx="3.6926889"
+     sodipodi:cy="3.5687733"
+     sodipodi:r1="3.5362694"
+     sodipodi:r2="1.7681347"
+     sodipodi:arg1="0.54522716"
+     sodipodi:arg2="1.5924247"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="M 6.7162329,5.4027262 0.59266714,5.2702627 3.7691668,0.03333092 Z"
+     inkscape:transform-center-x="0.014693096"
+     inkscape:transform-center-y="-1.6292268"
+     transform="matrix(1.8224287,-0.0304901,0.03111046,1.8595085,3.1783781,4.6787422)" />
+  <path
+     style="fill:#ffffff;stroke:#d0d0d0;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round"
+     d="M 10.012392,7.236679 9.987609,11.920694"
+     id="path2" />
+  <ellipse
+     style="fill:none;stroke:#d0d0d0;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round"
+     id="path3"
+     cx="10.012391"
+     cy="12.91202"
+     rx="0.09913259"
+     ry="0.12391573" />
+</svg>

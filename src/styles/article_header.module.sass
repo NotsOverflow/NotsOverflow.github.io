@@ -1,0 +1,82 @@
+/*                                                                            */
+/*               ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬                        */
+/*               ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││                        */
+/*               ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘                        */
+/*                                                                            */
+/*               article_header.module.sass created 2024/12/19                */
+/*               by Richard JUAN (contact@richard-juan.com)                   */
+/*                                                                            */
+/*               Copyright © 2024 Richard JUAN. All rights reserved           */
+/*                                                                            */
+
+$image_w: 150px
+$image_h: 150px
+
+.article
+    color: #cecece
+    display: flex
+    margin: 1rem auto
+    padding: 1rem
+    text-align: center
+    border-radius: 1rem
+    box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px
+
+.article p
+    width: 100%
+    border-radius: 5px
+    margin: 0px 0px 10px 0px
+    color: #a1b7f5
+    font-size: 24px
+
+.article_title_left
+    text-align: right
+.article_title_right
+    text-align: left
+
+.article:link
+    text-decoration: none
+
+.article:visited
+    text-decoration: none
+
+.article:hover
+    background-color: #86868613
+    color: #ffffff
+    text-decoration: none
+    transition: 1s
+
+.article_description
+    width: 100%
+    height: 100%
+    text-align: justify
+    overflow: hidden
+    font-size: 16px
+
+.article_text
+    flex-grow: 1
+    text-align: center
+    padding: 0px 15px 0px 15px
+
+.article_image
+    flex-shrink: 0
+    width: $image_w
+    height: $image_h
+
+.article_image_right
+    flex-shrink: 0
+
+.article_image_left
+    flex-shrink: 0
+    order: 1
+
+@media only screen and (min-width: 950px)
+    .article_empty_block_left
+        flex-shrink: 0
+        width: $image_w
+        height: $image_h
+        order: -1
+
+    .article_empty_block_right
+        flex-shrink: 0
+        width: $image_w
+        height: $image_h

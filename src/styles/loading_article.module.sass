@@ -1,0 +1,94 @@
+/*                                                                            */
+/*               ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬                        */
+/*               ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││                        */
+/*               ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘                        */
+/*                                                                            */
+/*               loading_article.module.sass created 2024/12/19               */
+/*               by Richard JUAN (contact@richard-juan.com)                   */
+/*                                                                            */
+/*               Copyright © 2024 Richard JUAN. All rights reserved           */
+/*                                                                            */
+
+$image_w: 150px
+$image_h: 150px
+
+@keyframes slide
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
+.article
+    display: flex
+    margin: 1rem auto
+    padding: 1rem
+    text-align: center
+    border-radius: 1rem
+    box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px
+
+.loading
+    flex-grow: 1
+    border-radius: 5px
+    margin: 5px 0px 0px 0px
+    background: linear-gradient(270deg, #38947d00, #698d83b0,#24665600)
+    background-size: 800% 800%
+    animation: slide 2.5s ease infinite
+
+.loading_title
+    width: 200px
+    height: 30px
+    border-radius: 5px
+    margin: 5px 0px 0px 0px
+    background: linear-gradient(270deg, #38947d00, #698d83b0,#24665600)
+    background-size: 800% 800%
+    animation: slide 2.5s ease infinite
+
+.loading_title_left
+    display: flex
+    justify-content: flex-end
+
+.loading_title_right
+    display: flex
+
+.article_text_right
+    flex-grow: 1
+    display: flex
+    flex-wrap: wrap
+    text-align: left
+    flex-flow: column
+    margin: 0px 0px 0px 10px
+
+.article_text_left
+    flex-grow: 1
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+    text-align: right
+    flex-flow: column
+    margin: 0px 10px 0px 0px
+
+.article_image
+    width: $image_w
+    height: $image_h
+    background: linear-gradient(270deg, #38947d00, #698d83b0,#24665600)
+    background-size: 800% 800%
+    animation: slide 2.5s ease infinite
+    border-radius: 5px
+
+.article_image_right
+    color: blue
+
+.article_image_left
+    order: 1
+
+.article_empty_block_left
+    flex-shrink: 0
+    width: $image_w
+    height: $image_h
+    order: -1
+
+.article_empty_block_right
+    width: $image_w
+    height: $image_h

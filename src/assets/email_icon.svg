@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ 
+                  ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬
+                  ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││
+                  ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘
+ 
+                   email_icon.svg created 2024/12/07
+                   by Richard JUAN (contact@richard-juan.com)
+ 
+                   All rights reserved to Richard JUAN
+ 
+-->
+
+
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="email_icon.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter9"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix8" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         id="feColorMatrix9" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.00875"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g
+     id="layer1">
+    <path
+       d="M -0.02478315,6.9987608 V 19.998761 H 19.975217 V 6.9987608 Z m 1.66210945,1 H 18.313108 L 10.35217,13.998761 H 9.5982638 Z M 0.97521685,8.9323546 9.024045,14.998761 h 1.902344 l 8.048828,-6.0664064 v 9.3125004 l -5.466797,-4.117188 -0.002,-0.002 -0.830078,0.625 0.002,0.002 5.634766,4.246094 H 1.6373263 l 5.6347656,-4.246094 0.00195,-0.002 -0.8300781,-0.625 -0.00195,0.002 -5.46679695,4.117188 z"
+       style="fill:#222222;fill-opacity:1;stroke:none;stroke-width:0px;filter:url(#filter9)"
+       id="path1" />
+  </g>
+</svg>

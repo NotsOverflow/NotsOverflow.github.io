@@ -1,0 +1,44 @@
+/*                                                                            */
+/*               ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬                        */
+/*               ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││                        */
+/*               ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘                        */
+/*                                                                            */
+/*               spinner.module.sass created 2024/12/19                       */
+/*               by Richard JUAN (contact@richard-juan.com)                   */
+/*                                                                            */
+/*               Copyright © 2024 Richard JUAN. All rights reserved           */
+/*                                                                            */
+
+$size: 200px
+
+@keyframes loading-wheel-animation
+    0%
+        transform: rotate(0deg)
+        box-shadow: 0 4px 0 0 red
+    50%
+        transform: rotate(180deg)
+        box-shadow: 0 4px 0 0 blue
+    100%
+        transform: rotate(360deg)
+        box-shadow: 0 4px 0 0 red
+
+.loadingEclipse
+    width: $size
+    height: $size
+    display: inline-block
+    overflow: hidden
+    padding: 10px
+    div
+        animation: loading-wheel-animation 1s linear infinite
+        width: 160px
+        height: 160px
+        border-radius: 50%
+        transform-origin: 80px 82px
+        box-sizing: content-box
+
+.loadingWheel
+    width: 100%
+    height: 100%
+    transform: translateZ(0) scale(1)
+    backface-visibility: hidden
+    transform-origin: 0 0

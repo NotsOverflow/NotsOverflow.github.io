@@ -1,0 +1,119 @@
+/*                                                                            */
+/*               ╔╗╔┌─┐┌┬┐┌─┐╔═╗┬  ┬┌─┐┬─┐┌─┐┬  ┌─┐┬ ┬                        */
+/*               ║║║│ │ │ └─┐║ ║└┐┌┘├┤ ├┬┘├┤ │  │ ││││                        */
+/*               ╝╚╝└─┘ ┴ └─┘╚═╝ └┘ └─┘┴└─└  ┴─┘└─┘└┴┘                        */
+/*                                                                            */
+/*               header.module.sass created 2024/12/19                        */
+/*               by Richard JUAN (contact@richard-juan.com)                   */
+/*                                                                            */
+/*               Copyright © 2024 Richard JUAN. All rights reserved           */
+/*                                                                            */
+
+$contact_size: 90px
+$t_duration: 0.2s
+$t_function: ease-in
+
+$opacity_t: opacity $t_duration $t_function
+$height_t: height $t_duration $t_function
+$width_t: width $t_duration $t_function
+$font_size_t: font-size $t_duration $t_function
+
+@font-face
+    font-family: 'PublicPixel'
+    src: local("PublicPixel"), url('../assets/PublicPixel.ttf')
+    font-weight: normal
+    font-style: normal
+
+/* common styles */
+.main_container
+    display: flex
+
+.reduced_header, .extended_header
+    display: flex
+
+.midle_header
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.left_arrow, .title
+    padding-top: 5px
+
+.left_arrow, .email_link, .title
+    color: #bdbdbd
+    text-decoration: none
+    font-family: 'PublicPixel'
+
+.email_link
+    overflow: hidden
+
+.email_link_text
+    font-size: 12px
+    overflow: hidden
+    height: 0px
+    transition: height $t_duration $t_function
+
+.email_link:hover .email_link_text
+    height: 20px
+    transition: height $t_duration $t_function
+
+.left_container, .right_container, .email_link
+    width: $contact_size
+    display: flex
+    flex-direction: column
+    align-content: center
+
+.left_arrow
+    width: $contact_size
+    height: 40px
+    font-size: 20px
+    display: block
+
+.email_link:hover .email_icon
+    content: url("/src/assets/email_icon_open.svg")
+
+/* extended header styles */
+.extended_header
+    min-height: 200px
+
+.extended_header .title
+    font-size: 40px
+    transition: $font_size_t
+
+.extended_header .email_icon
+    height: 40px
+    height: 40px
+
+.extended_header .avatar
+    height: 300px
+    width: 300px
+    opacity: 1.0
+    transition: $height_t, $width_t, $opacity_t
+
+.extended_header .left_arrow
+    opacity: 0.0
+    transition: $opacity_t
+
+/* reduced header styles */
+.reduced_header
+    height: 100px
+
+.reduced_header .avatar
+    height: 0px
+    width: 0px
+    opacity: 0.0
+    transition: $height_t, $width_t, $opacity_t
+
+.reduced_header .title
+    height: 40px
+    font-size: 20px
+    transition: $font_size_t
+
+.reduced_header .email_icon
+    height: 30px
+    height: 30px
+
+.reduced_header .left_arrow
+    opacity: 1.0
+    transition: $opacity_t
