@@ -15,7 +15,6 @@
 import styles from "../styles/header.module.sass"
 import { EMAIL, getHash, WEB_NAME } from "../libs/globals";
 import { useEffect, useRef } from "react";
-import avatar from "./src/assets/avatar.svg";
 
 interface Param{
     email: string;
@@ -68,7 +67,7 @@ const Mailto: React.FC<Param> = ({ email, subject, body }) => {
   if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
 
   return <a target="_blank" className={styles.email_link} href={`mailto:${email}${params}`}>
-                    <img className={styles.email_icon} src='/src/assets/email_icon.svg'/>
+                    <img className={styles.email_icon} src='/assets/email_icon.svg'/>
                     <div className={styles.email_link_text}>Contact</div>
                 </a>;
 };
@@ -96,7 +95,7 @@ export const Header: React.FC = () =>{
                 <ArrowBack />
             </div>
             <div className={styles.midle_header}>
-                <img className={styles.avatar} src={avatar}/>
+                <img className={styles.avatar} src="/assets/avatar.svg"/>
                 <div className={styles.title}>{WEB_NAME.toUpperCase()}</div>
             </div>
             <div className={styles.right_container}>
