@@ -10,6 +10,8 @@
 /*                                                                            */
 
 $contact_size: 90px
+$low_contact_size: 60px
+$low_low_contact_size: 30px
 $t_duration: 0.2s
 $t_function: ease-in
 
@@ -117,3 +119,56 @@ $font_size_t: font-size $t_duration $t_function
 .reduced_header .left_arrow
     opacity: 1.0
     transition: $opacity_t
+
+@media only screen and (max-width: 920px) and (min-width: 10px)
+    .reduced_header
+        height: 40px
+@media only screen and (max-width: 450px) and (min-width: 390px)
+    .extended_header .title
+        font-size: 18px
+    .extended_header .avatar
+        height: 180px
+        width: 180px
+    .left_container, .right_container, .email_link
+        width: $low_contact_size
+    .extended_header .email_icon
+        height: 30px
+        height: 30px
+    .email_link_text
+        font-size: 8px
+    .left_arrow
+        width: $low_contact_size
+        height: 30px
+        font-size: 16px
+    .reduced_header .email_icon
+        height: 25px
+        height: 25px
+    .reduced_header .title
+        height: 30px
+        font-size: 16px
+
+@media only screen and (max-width: 390px) and (min-width: 10px)
+    .extended_header .title
+        font-size: 14px
+    .extended_header .email_icon
+        height: 25px
+        height: 25px
+    .extended_header .avatar
+        height: 150px
+        width: 150px
+    .left_arrow
+        width: $low_contact_size
+        height: 20px
+        font-size: 13px
+    .reduced_header .email_icon
+        height: 20px
+        height: 20px
+    .reduced_header .title
+        height: 30px
+        font-size: 13px
+    .left_container, .right_container, .email_link
+        width: $low_low_contact_size
+    .left_arrow
+        width: $low_low_contact_size
+        height: 30px
+        font-size: 13px

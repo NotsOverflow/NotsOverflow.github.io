@@ -9,7 +9,7 @@
 /*               Copyright © 2024 Richard JUAN. All rights reserved           */
 /*                                                                            */
 
-.CodeBlockClass
+.code
     white-space: pre-wrap
     position: relative
     text-align: left
@@ -20,5 +20,9 @@
     padding: 16px
     overflow-x: auto
 
-.CodeBlockClass code > span
+.code code > span
     padding-left: 5px
+
+@media only screen and (max-width: 450px) and (min-width: 10px)
+    .code
+        font-size: 12px

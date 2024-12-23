@@ -12,6 +12,11 @@
 $image_w: 150px
 $image_h: 150px
 
+$low_image_w: 100px
+$low_image_h: 100px
+$low_low_image_w: 70px
+$low_low_image_h: 70px
+
 @keyframes slide
     0%
         background-position: 0% 50%
@@ -78,17 +83,63 @@ $image_h: 150px
     border-radius: 5px
 
 .article_image_right
-    color: blue
+    display: flex
+    flex-shrink: 0
+    align-items: center
+    justify-content: center
 
 .article_image_left
+    display: flex
+    flex-shrink: 0
+    align-items: center
+    justify-content: center
     order: 1
 
-.article_empty_block_left
-    flex-shrink: 0
-    width: $image_w
-    height: $image_h
-    order: -1
+@media only screen and (min-width: 900px)
+    .article_empty_block_left
+        flex-shrink: 0
+        width: $image_w
+        height: $image_h
+        order: -1
+    .article_empty_block_right
+        flex-shrink: 0
+        width: $image_w
+        height: $image_h
+    .article p
+        font-size: 32px
+    .article_description
+        font-size: 24px
+        padding-bottom: 20px
 
-.article_empty_block_right
-    width: $image_w
-    height: $image_h
+@media only screen and (max-width: 860px) and (min-width: 450px)
+    .article p
+        font-size: 28px
+    .article_description
+        font-size: 20px
+
+@media only screen and (max-width: 390px) and (min-width: 10px)
+    .article_image
+        width: $low_low_image_w
+        height: $low_low_image_h
+    .article p
+        font-size: 14px
+    .article_description
+        font-size: 10px
+
+@media only screen and (max-width: 420px) and (min-width: 390px)
+    .article_image
+        width: $low_low_image_w
+        height: $low_low_image_h
+    .article p
+        font-size: 16px
+    .article_description
+        font-size: 12px
+
+@media only screen and (max-width: 450px) and (min-width: 420px)
+    .article_image
+        width: $low_image_w
+        height: $low_image_h
+    .article p
+        font-size: 16px
+    .article_description
+        font-size: 12px

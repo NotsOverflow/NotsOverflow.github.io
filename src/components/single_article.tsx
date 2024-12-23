@@ -53,7 +53,6 @@ export const SingleArticle: React.FC<ISingleArticleProps> = ({
     }, []);
     return (
        !article.empty || doneLoading ? <ArticleHeader article={article} right={right}/> : <LoadingArticle right={right} />
-        //<LoadingArticle right={right} />
     );
 }
 

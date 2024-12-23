@@ -9,10 +9,16 @@
 /*               Copyright © 2024 Richard JUAN. All rights reserved           */
 /*                                                                            */
 
-
 #root
   max-width: 1000px
   min-width: 520px
   margin: 0 auto
   padding: 2rem
   text-align: center
+
+@media only screen and (max-width: 390px)
+  #root
+    padding: 15px
+@media only screen and (max-width: 450px)
+  #root
+    min-width: 300px
