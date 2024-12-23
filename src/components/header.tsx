@@ -62,14 +62,50 @@ const ArrowBack: React.FC = () => {
 };
 
 const Mailto: React.FC<Param> = ({ email, subject, body }) => {
-  let params = subject || body ? '?' : '';
-  if (subject) params += `subject=${encodeURIComponent(subject)}`;
-  if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+    let params = subject || body ? '?' : '';
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
 
-  return <a className={styles.email_link} href={`mailto:${email}${params}`}>
-                    <img className={styles.email_icon} src='/assets/email_icon.svg'/>
-                    <div className={styles.email_link_text}>Contact</div>
-                </a>;
+    const emailLinkRef = useRef<HTMLAnchorElement>(null);
+
+    const scrollDown : Function = ()=>{
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    };
+
+    useEffect(() => {
+        const handleEmailLinkClick = (e: MouseEvent) => {
+            e.preventDefault();
+
+            if (emailLinkRef.current) {
+                const href = emailLinkRef.current.href;
+                try {
+                    window.location.href = href;
+                } catch (error) {
+                    scrollDown();
+                }
+            }
+        };
+
+        if (emailLinkRef.current) {
+            emailLinkRef.current.addEventListener('click', handleEmailLinkClick);
+        }
+
+        return () => {
+            if (emailLinkRef.current) {
+                emailLinkRef.current.removeEventListener('click', handleEmailLinkClick);
+            }
+        };
+    }, []);
+    
+    return(
+        <a ref={emailLinkRef} className={styles.email_link} href={`mailto:${email}${params}`} >
+            <img className={styles.email_icon} src='/assets/email_icon.svg' />
+            <div className={styles.email_link_text}>Contact</div>
+        </a>
+    );
 };
 
 const chouse_class: Function = () : string => {
