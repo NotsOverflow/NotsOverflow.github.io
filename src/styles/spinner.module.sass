@@ -10,6 +10,7 @@
 /*                                                                            */
 
 $size: 200px
+$low_size: 100px
 
 @keyframes loading-wheel-animation
     0%
@@ -42,3 +43,12 @@ $size: 200px
     transform: translateZ(0) scale(1)
     backface-visibility: hidden
     transform-origin: 0 0
+
+@media only screen and (max-width: 450px) and (min-width: 10px)
+    .loadingEclipse
+        width: $low_size
+        height: $low_size
+        div
+            width: 80px
+            height: 80px
+            transform-origin: 40px 41px
