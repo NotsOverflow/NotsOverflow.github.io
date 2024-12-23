@@ -31,7 +31,7 @@ export const SIMPLETABLE_REG = /^\|[^|]*\|/;
 export const TABLE_REG = /(?:\s*)(?:\|.*\|)\s*(?:\n(?:\|.*\|)\s*)*/g;
 
 export const INNERLINK_REG = /^\[([\x20-\x5C\x5E-\x7E]+)\]\(([\x20-\x28\x2A-\x7E]+)\)/g;
-export const INNERCODE_REG = /^\`([\x20-\x7E]+)\`/g;
+export const INNERCODE_REG = /^\`([\x20-\x5F\x61-\x7E]+)\`/g;
 export const INNERITALICBOLD_REG = /^\*\*\_([\x20-\x7E]+)\_\*\*/g;
 export const INNERBOLD_REG = /^\*\*([\x20-\x7E]+)\*\*/g;
 export const INNERITALIC_REG = /^\_([\x20-\x7E]+)\_/g;
