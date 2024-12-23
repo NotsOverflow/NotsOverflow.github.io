@@ -19,7 +19,7 @@ export const Footer: React.FC = () =>{
     return (
         <>
         <div className={styles.footer}>Copyright © 2024 {WEB_NAME}. All rights reserved</div>
-        <div className={styles.footer}>Contact me at : {EMAIL}</div>
+        <div className={styles.footer}>{EMAIL}</div>
         </>
     );
 }
