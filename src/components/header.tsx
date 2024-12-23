@@ -66,7 +66,7 @@ const Mailto: React.FC<Param> = ({ email, subject, body }) => {
   if (subject) params += `subject=${encodeURIComponent(subject)}`;
   if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
 
-  return <a target="_blank" className={styles.email_link} href={`mailto:${email}${params}`}>
+  return <a className={styles.email_link} href={`mailto:${email}${params}`}>
                     <img className={styles.email_icon} src='/assets/email_icon.svg'/>
                     <div className={styles.email_link_text}>Contact</div>
                 </a>;
