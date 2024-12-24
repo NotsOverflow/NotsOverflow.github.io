@@ -17,10 +17,10 @@ import styles from "../styles/footer.module.sass";
 
 export const Footer: React.FC = () =>{
     return (
-        <>
-        <div className={styles.footer}>Copyright © 2024 {WEB_NAME}. All rights reserved</div>
-        <div className={styles.footer}>{EMAIL}</div>
-        </>
+        <div className={styles.footer}>
+            <div >Copyright © 2024 {WEB_NAME}. All rights reserved</div>
+            <div >{EMAIL}</div>
+        </div>
     );
 }
 export default Footer;

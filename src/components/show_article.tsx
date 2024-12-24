@@ -41,7 +41,7 @@ export const ShowArticle: React.FC<Param> = ({article}) =>{
             else if(elem.type == ContentType.bullet) return <ul key={index} className={styles.bullet} >{elem.content.map((bullet: string, i: number)=>{ return <li key={i}><MarkdownString markdown_string={bullet} /></li> ;})}</ul>;
             else if(elem.type == ContentType.space) return <div key={index} className={styles.space}></div>;
             else if(elem.type == ContentType.quote) return <div key={index} className={styles.quote} ><MarkdownString markdown_string={elem.content} /></div>;
-            else if(elem.type == ContentType.image) return <img key={index} className={styles.image} src={`${RAW_LINK}${elem.content}`} />;
+            else if(elem.type == ContentType.image) return <div className={styles.image_div}><img key={index} className={styles.image} src={`${RAW_LINK}${elem.content}`} /></div>;
             else if(elem.type == ContentType.table) return <MarkdownToTable key={index} className={styles.table} markdown={elem.content} />;
             else if(elem.type == ContentType.link) return <a key={index} className={styles.alone_link} href={elem.content.href} >{elem.content.display}</a>;
             else if(elem.type == ContentType.code) return <CodeBlock key={index} code={elem.content.code} language={elem.content.language} />;
